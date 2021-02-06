@@ -51,7 +51,7 @@ public class HomeView implements ApplicationListener<StageReadyEvent> {
 
     @FXML
     Pane timePane;
-    
+
     @FXML
     private ImageView backgroundImage;
 
@@ -105,7 +105,7 @@ public class HomeView implements ApplicationListener<StageReadyEvent> {
 
             Scene scene = new Scene(root, width, height);
             // 隐藏鼠标
-            scene.setCursor(Cursor.NONE);
+            //scene.setCursor(Cursor.NONE);
             // 加载字体
             homeSkin.getFontsUrl(HomeView.class).forEach((fontUrl) -> Font.loadFont(fontUrl, 20));
             // 加载CSS文件
